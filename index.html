@@ -4,6 +4,8 @@
     <div id="filho3"></div>
 </div>
 
+<!-- Aqui eu deifini cada uma das div's e defin seus nomes usando uma identificação -->
+
 <style>
     body {
         margin: 0;
@@ -15,12 +17,14 @@
         width: 250px;
         height: 240px;
     }
+    /* Eu defini a uma div para o vai as margens para alinhar todos os outros elementos containerizados, junto a isso, largura e tamanho para que pudessem ficar uniformes a página */
     
     #pai div {
         width: 120px;
         height: 120px;
         position: absolute;
     }
+    /* Este pai é responsável para abrigar todas as outras figuras e usei as medidas para ser uniforme em razao das figuras, usei o position: absolute para sobrepor e se manter estável a medida das minhas modificações nos filhos. */
     
     #filho1 {
         z-index: 1;
@@ -28,6 +32,7 @@
         border-radius: 60px;
         background: #F3AC3C;
     }
+    /* O primeiro filho é até simples, um circulo empilhado na primeira posição, por isso usei z-index: 1 e defini margem de acordo com como sua posição deveria ser. */
     
     #filho2 {
         z-index: 2;
@@ -35,6 +40,7 @@
         border-radius: 60px 0px 60px 60px;
         background: #998235;
     }
+    /* O mesmo passo com o primeiro filho foi repetido aqui e ao longo do código com exessão de que usei border radious e defini as bordas da div (menos a aresta que deveria ser pontuda) e mudei a cor, além de sua posição ser equivalente ao z-index: 2. */
     
     #filho3 {
         z-index: 3;
